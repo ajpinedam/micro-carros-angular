@@ -9,9 +9,8 @@
  */
 angular.module('microCarrosApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.mensaje = "A lo que rene dijo que sea";
+    $scope.cambiar = function(){
+    	$scope.mensaje = $scope.mensaje2;
+    }
   });
