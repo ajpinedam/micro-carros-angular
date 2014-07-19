@@ -1,10 +1,11 @@
 <header id="main-header" class="col-md-12">
-	<h1>{{mensaje}}</h1>
+	<h1>"Hello"</h1>
 
 	<div>
-		<button ng-click="cambiar(); ">Cambiar</button>
+	<!--	<button ng-click="cambiar(); ">Cambiar</button>
 		<input ng-model="mensaje2" type="text"></input>
 		<h2>{{mensaje2}}</h2>
+	-->
 	</div>
 </header>
 
@@ -104,99 +105,11 @@
 		</div>
 
 		<div id="latest-vehicles" class="col-md-10">
-			<article class="col-md-3">
+			<article class="col-md-3" ng-repeat="vehicule in vehicules">
 				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363166_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363164_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363163_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363161_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363166_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363164_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363163_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363161_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363166_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363164_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363163_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
-				</a>
-			</article>
-
-			<article class="col-md-3">
-				<a href="details.html">
-					<img src="http://data.supercarros.com/used_cars/363161_main_tn.jpg" alt="car" />
-					<h4>Volkswagen Amarok 2012</h4>
-					<h5>US$ 26,000</h5>
+					<img width="150px" ng-src="{{vehicule.gallery[0].path}}" alt="" />
+					<h4>{{vehicule.model.name}}</h4>
+					<h5>US$ {{vehicule.price}}</h5>
 				</a>
 			</article>
 		</div>
