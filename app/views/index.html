@@ -106,7 +106,7 @@
 
 		<div id="latest-vehicles" class="col-md-10">
 			<article class="col-md-3" ng-repeat="vehicule in vehicules">
-				<a href="details.html">
+				<a href="#/ver/{{vehicule._id}}">
 					<img width="150px" ng-src="{{vehicule.gallery[0].path}}" alt="" />
 					<h4>{{vehicule.model.name}}</h4>
 					<h5>US$ {{vehicule.price}}</h5>
